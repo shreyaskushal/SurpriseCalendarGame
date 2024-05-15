@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SurpriseCalendarAPI.props" />
+</Project>

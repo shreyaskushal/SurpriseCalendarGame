@@ -1,0 +1,9 @@
+<!-- surprise-calendar.component.html -->
+<div class="grid-container">
+  <div *ngFor="let square of allSquares"
+       class="grid-square"
+       [class.open]="square.isOpen"
+       (click)="scratchSquare(square)">
+    <span *ngIf="square.isOpen">{{ square.prizeAmount > 0 ? '€' + square.prizeAmount : '€' + '0' }}</span>
+  </div>
+</div>

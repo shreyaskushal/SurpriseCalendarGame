@@ -1,0 +1,27 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    gap: 2px;
+    width: 100%;
+  }
+  
+  .grid-square {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+  }
+  
+  .grid-square.open {
+    background-color: lightgreen; 
+  }
+  
+  .grid-square span {
+    font-size: 14px;
+    color: black;
+  }
+  
